@@ -11,9 +11,12 @@ fetch(apiUrl)
     const contentDiv = document.getElementById('api-content');
     
     if (data) {
-      contentDiv.innerHTML = `
-        <pre>${JSON.stringify(data, null, 2)}</pre>
-      `;
+      data.array.forEach(element => {
+        
+        contentDiv.innerHTML = `
+          <h1>${element.Name}</h1>
+        `;
+      });
     } else {
       contentDiv.innerHTML = '<p>TESTE_FALHA</p>';
     }
