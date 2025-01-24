@@ -12,10 +12,10 @@ fetch(apiUrl)
     
     if (data) {
       contentDiv.innerHTML = data.map(obj => `
-          <tr>
-            <td>${obj.ramal}</td>
-            <td>${obj.colaborador}</td>
-          </tr>
+          <ul>
+            <li>${obj.ramal}</li>
+            <li>${obj.colaborador}</li>
+          </ul>
         `)
     } else {
       contentDiv.innerHTML = '<p>TESTE_FALHA</p>';

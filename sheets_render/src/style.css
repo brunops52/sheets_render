@@ -96,4 +96,5 @@ button:focus-visible {
 }
  #api-content {
   display: flex;
+  color: red;
  }
