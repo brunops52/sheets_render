@@ -11,12 +11,7 @@ fetch(apiUrl)
     const contentDiv = document.getElementById('api-content');
     
     if (data) {
-      data.array.forEach(element => {
-        
-        contentDiv.innerHTML = `
-          <h1>${element.Name}</h1>
-        `;
-      });
+      contentDiv.innerHTML = '<p>TESTE_SUCESSO</p>';
     } else {
       contentDiv.innerHTML = '<p>TESTE_FALHA</p>';
     }
