@@ -13,8 +13,8 @@ fetch(apiUrl)
     if (data) {
       contentDiv.innerHTML = data.map(obj => `
           <tr>
-            <td>${obj.Nome}</td>
-            <td>${obj.Bruno}</td>
+            <td>${obj.ramal}</td>
+            <td>${obj.colaborador}</td>
           </tr>
         `)
     } else {
