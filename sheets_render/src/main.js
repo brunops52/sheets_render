@@ -11,7 +11,7 @@ fetch(apiUrl)
     const contentDiv = document.getElementById('api-content');
     
     if (data) {
-      contentDiv.innerHTML = `<p>TESTE_SUCESSO ${data.map(obj => obj.Nome)}</p>`;
+      contentDiv.innerHTML = `<p>TESTE_SUCESSO ${data.map(obj => obj.Nome, obj.Bruno)}</p>`;
     } else {
       contentDiv.innerHTML = '<p>TESTE_FALHA</p>';
     }
