@@ -6,5 +6,7 @@
   list-style: none;
   display: flex;
   width: 100px;
-  justify-content: space-between;
+}
+#api-content ul li {
+  margin-right: 24px;
 }
